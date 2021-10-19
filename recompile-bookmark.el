@@ -35,6 +35,7 @@
 
 (require 'compile)
 
+;;;###autoload
 (defun recompile-bookmark-handler (bookmark)
   "Restart a compile command from BOOKMARK."
   (let ((command (cdr (assoc 'command bookmark)))
