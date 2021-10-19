@@ -1,0 +1,14 @@
+* recompile-bookmark.el
+# Add CI badges here
+#+BEGIN_HTML
+#+END_HTML
+
+This is an Emacs package that adds support for bookmarking compilation buffers.
+It stores the command and directory of =*compilation*= buffer to your bookmarks.
+You can use the bookmark to "recompile" your project.
+Since it is a bookmark, it persists across sessions.
+** Usage
+After you run =compile=, run =recompile-bookmark-store= command to store a bookmark to the command.
+You can store the bookmark even outside of a compilation buffer.
+
+Then you can rerun the command by invoking the bookmark.
